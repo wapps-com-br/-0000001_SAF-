@@ -5,7 +5,8 @@
 [https://nodejs.org](https://nodejs.org)
 **Node.js** Como um tempo de execução do JavaScript conduzido por eventos assíncronos, o Node foi projetado para criar aplicativos de rede escaláveis. No seguinte exemplo "hello world", muitas conexões podem ser tratadas simultaneamente. Em cada conexão, o retorno de chamada é disparado, mas se não houver nenhum trabalho a ser feito, o Node dormirá.
 
-    <span style="color:pink">const</span> http <span style="color:orange">=</span> require(<span style="color:green">'http'</span>);
+```js
+    const http = require('http');
 
     const hostname = '127.0.0.1';
     const port = 3000;
@@ -19,6 +20,7 @@
     server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
     });
+```
 
 Se você trabalhou com o JavaScript por um tempo, talvez tenha ouvido falar de **npm**.
 **npm** facilita que os desenvolvedores JavaScript compartilhem o código que criaram para resolver problemas específicos e para outros desenvolvedores reutilizar esse código em seus próprios aplicativos.
